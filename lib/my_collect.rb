@@ -5,14 +5,13 @@ def my_collect(array)
     yield(array[i])
     i = i + 1
   end
-  array
 end
 
 
 my_collect(students) do |student|
-  student.split(" ").first
+  puts student.split(" ").first
 end
 
 my_collect(collection) do |language|
-  language.upcase
+ puts language.upcase
 end
