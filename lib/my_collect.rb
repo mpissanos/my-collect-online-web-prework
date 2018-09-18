@@ -1,17 +1,18 @@
-def my_collect(arr)
-  if block_given?
+def my_collect(array)
   i = 0
   
-  while i < arr.length
-   yield arr[i]
-   i = i + 1
+  while i < array.length
+    yield(array[i])
+    i = i + 1
   end
+  array
 end
 
-# my_collect(students) do |name|
-#   name.split(" ").first 
-# end
 
-# my_collect(languages) do |lang|
-#   lang.upcase
-# end 
+my_collect(students) do |student|
+  student.split(" ").first
+end
+
+my_collect(collection) do |language|
+  language.upcase
+end
