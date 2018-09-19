@@ -1,6 +1,5 @@
 def my_collect(array)
   i = 0
-  
   while i < array.length
     yield(array[i])
     i = i + 1
@@ -8,10 +7,10 @@ def my_collect(array)
 end
 
 
-my_collect(students) do |student|
-  puts student.split(" ").first
-end
+# my_collect(students) do |student|
+#   puts student.split(" ").first
+# end
 
-my_collect(collection) do |language|
- puts language.upcase
-end
+# my_collect(collection) do |language|
+# puts language.upcase
+# end
